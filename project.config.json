@@ -1,0 +1,86 @@
+{
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false
+  },
+  "appid": "wxc99ae11dcd7019de",
+  "projectname": "Order%20system",
+  "libVersion": "3.6.0",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/list/list",
+          "pathName": "pages/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/list/list",
+          "pathName": "pages/order/list/list",
+          "query": "order_id=3",
+          "scene": null
+        },
+        {
+          "name": "pages/order/checkout/checkout",
+          "pathName": "pages/order/checkout/checkout",
+          "query": "order_id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/order/checkout/checkout",
+          "pathName": "pages/order/checkout/checkout",
+          "query": "order_id=4",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/detail",
+          "pathName": "pages/order/detail/detail",
+          "query": "order_id=5",
+          "scene": null
+        },
+        {
+          "name": "pages/record/record",
+          "pathName": "pages/record/record",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "compileType": "miniprogram",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}
