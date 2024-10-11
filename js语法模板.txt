@@ -8,3 +8,21 @@ for (var i in arr ){
   console.log(i);//0 1 2
   console.log(arr[i]);//1 2 3
 }
+
+
+
+
+
+
+
+
+点分类
+
+
+
+
+
+
+
+
+

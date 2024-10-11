@@ -25,6 +25,7 @@ Page({
   },
 
   pay: function () {
+    console.log('12345',this.data.comment)
     var id = this.data.id;
     wx.showLoading({
       title: '正在支付...',
@@ -35,10 +36,11 @@ Page({
       comment: this.data.comment
     })
     fetch('food/order', {
+      // 给后端传送的是json
       id,
       comment: this.data.comment
     }, 'POST').then(data => {
-      console.log(data,3729473892748923743289472389472389472389472389472938)
+      console.log(data,"!!!!!!!!!!!!!!!!!!!!!!!!!!!")
       return fetch('food/pay', {
         id
       }, 'POST')

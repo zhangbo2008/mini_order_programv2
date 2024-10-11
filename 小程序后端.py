@@ -25,6 +25,13 @@ UPLOAD_ROOT_PATH = 'pic_data'
 from flask import Flask, request
 lastorder=None
 
+
+
+@app.route('/food/record', methods=['GET', 'POST'])
+def editorData22221211233312312222():
+    return jsonify({})
+
+
 @app.route('/food/pay', methods=['GET', 'POST'])
 def editorData22221211212312222():
     return jsonify(lastorder)
@@ -38,11 +45,16 @@ def editorData2222121222():
     if ttttt2:
         lastorder['comment']=ttttt2
     print('是否取数据', ttttt)
+    print('是否取数据', ttttt2)
     if ttttt:
         print('343423423',ttttt)
+        print(lastorder,'?????????')
         return jsonify(lastorder)
     print(request)
     data=(request.json)
+    if 'comment' in data:
+        lastorder['comment']=data['comment']
+    print(111111111111111111111111111,lastorder)
     if 'id' in data:
         return jsonify(lastorder)
         

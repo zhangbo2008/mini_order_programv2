@@ -15,6 +15,7 @@ Page({
     fetch('food/order', {
       id,
     }).then(data => {
+      console.log(data,'=============')
       this.setData(data)
       wx.hideLoading()
     }, () => {
